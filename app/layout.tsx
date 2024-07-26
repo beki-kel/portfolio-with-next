@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { ThemeProvider } from "@/components/theme-provider"
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import { ModeToggle } from '../components/ModeToggle'
 import Head from "next/head";
 
 const space_Grotesk = Space_Grotesk({ subsets: ["latin"] });
@@ -22,12 +20,8 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
         <link rel="manifest" href="../public/site.webmanifest"/>
       </Head>
       <body className={space_Grotesk.className}>
-        <ThemeProvider attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange>
-              {children}
-        </ThemeProvider>
+        {children}
+              
         </body>
     </html>
   );
