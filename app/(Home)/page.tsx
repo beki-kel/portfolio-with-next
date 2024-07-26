@@ -5,7 +5,9 @@ import { cn } from "@/lib/utils";
 import { TextGenerateEffect } from "../../components/ui/text-generate-effect";
 import { Dosis } from 'next/font/google';
 import { HoverBorderGradient } from "../../components/ui/hover-border-gradient";
-import {Avatar,AvatarFallback,AvatarImage,} from "@/components/ui/avatar"
+import {Avatar,AvatarFallback,AvatarImage,} from "@/components/ui/avatar";
+import About from "./components/About"
+import Link from 'next/link'
 
 export const DosisText = Dosis({
   weight: ['800'],
@@ -25,7 +27,7 @@ const page = () => {
           <TextGenerateEffect words={words} />
           <div className="m-6 flex justify-center text-center">
             <HoverBorderGradient containerClassName="rounded-full" as="button">
-              <span>Hire Me</span>
+              <Link href = {"mailto:breketkelay@gmail.com"}>Hire Me</Link>
             </HoverBorderGradient>
           </div>
         </div>
@@ -41,10 +43,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className='h-screen bg-slate-950 text-white'>
-      
-      </div>
-
+      <About/>
     </div>
   )
 }
