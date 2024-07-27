@@ -2,7 +2,6 @@
 
 import React from 'react'
 import {Boxes} from '../../../components/ui/background-boxes'
-import { cn } from "@/lib/utils";
 import { TextGenerateEffect } from "../../../components/ui/text-generate-effect";
 import { DosisText } from '../../../components/DosisText';
 import { HoverBorderGradient } from "../../../components/ui/hover-border-gradient";
