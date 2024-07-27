@@ -4,7 +4,8 @@ import React from 'react';
 import { DosisText } from '../../../components/DosisText';
 import { InfiniteMovingCards } from "../../../components/ui/infinite-moving-cards";
 import { DiCss3, DiHtml5, DiJava, DiJavascript, DiJavascript1, DiReact } from 'react-icons/di';
-import { SiDocker, SiExpress, SiFigma, SiFirebase, SiJavascript, SiMongodb, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiPython, SiReact, SiTails, SiTailwindcss, SiTypescript } from 'react-icons/si';
+import { SiDocker, SiExpress, SiFigma, SiFirebase, SiJavascript, SiMongodb, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiPython, SiReact, SiTailwindcss, SiTypescript } from 'react-icons/si';
+
 
 type Skill = {
     name: string;
@@ -13,6 +14,7 @@ type Skill = {
 };
 
 const Skill = () => {
+    
     const skills: Skill[] = [
         {
             src: DiHtml5,
