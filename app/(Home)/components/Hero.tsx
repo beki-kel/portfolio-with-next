@@ -1,5 +1,3 @@
-"use client"
-
 import React from 'react'
 import {Boxes} from '../../../components/ui/background-boxes'
 import { TextGenerateEffect } from "../../../components/ui/text-generate-effect";
@@ -17,7 +15,7 @@ return (
         <TextGenerateEffect words={words} />
         <div className="m-6 flex justify-center text-center">
             <HoverBorderGradient containerClassName="rounded-full" as="button">
-            <Link href = {"mailto:breketkelay@gmail.com"}>Hire Me</Link>
+            <Link href = {"mailto:breketkelay@gmail.com"}>Contact Me</Link>
             </HoverBorderGradient>
         </div>
         </div>
@@ -27,7 +25,7 @@ return (
 
         <Avatar className='h-96 w-96 border-4 border-blue-700' >
             <AvatarImage src="https://res.cloudinary.com/dr2h8zmll/image/upload/c_fill,ar_1:1,g_auto/v1722025229/MY_Image_dha270.jpg" alt="@shadcn" />
-            <AvatarFallback>BK</AvatarFallback>
+            <AvatarFallback className='bg-transparent text-white'>BK</AvatarFallback>
         </Avatar>
 
         </div>
