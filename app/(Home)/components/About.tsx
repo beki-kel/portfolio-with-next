@@ -1,10 +1,7 @@
 "use client"
 import React from 'react'
 import { GlareCard } from "../../../components/ui/glare-card";
-import { FaSchool } from 'react-icons/fa6';
 import { SiCisco, SiCoursera } from 'react-icons/si';
-import { Button } from "@/components/ui/button"
-import Link from 'next/link';
 import { DosisText } from '../../../components/DosisText';
 import { LampContainer } from "../../../components/ui/lamp";
 
