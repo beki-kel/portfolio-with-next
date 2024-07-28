@@ -12,7 +12,7 @@ return (
         <div className='w-full flex'>
         <div className='w-5/12 bg-black flex flex-col justify-center items-center px-20'>
         <h1 className='text-white text-center text-4xl font-sans font-bold'><span className={DosisText.className}>Hey I &apos;m Bereket 👋 </span></h1>
-        <TextGenerateEffect words={words} />
+            <TextGenerateEffect words={words} />
         <div className="m-6 flex justify-center text-center">
             <HoverBorderGradient containerClassName="rounded-full" as="button">
             <Link href = {"mailto:breketkelay@gmail.com"}>Contact Me</Link>
