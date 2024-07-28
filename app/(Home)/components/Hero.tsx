@@ -24,7 +24,7 @@ return (
         <Boxes />
 
         <Avatar className='h-96 w-96 border-4 border-blue-700' >
-            <AvatarImage src="https://res.cloudinary.com/dr2h8zmll/image/upload/c_fill,ar_1:1,g_auto/v1722025229/MY_Image_dha270.jpg" alt="@shadcn" />
+            <AvatarImage src="https://res.cloudinary.com/dr2h8zmll/image/upload/c_fill,ar_1:1,g_auto/v1722025229/MY_Image_dha270.jpg"/>
             <AvatarFallback className='bg-transparent text-white'>BK</AvatarFallback>
         </Avatar>
 
