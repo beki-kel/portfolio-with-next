@@ -13,7 +13,7 @@ const socials: Socials[] = [
     { name: 'GitHub', url: 'https://github.com/beki-kel', icon: FaGithub },
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/bereket-kelay/', icon: FaLinkedin },
     { name: 'Instagram', url: 'https://www.instagram.com/beki_kel?igsh=MW5tM3JtaXk5MHF5OQ==', icon: FaInstagram },
-    { name: 'Telegram', url: '' , icon: FaTelegram}
+    { name: 'Telegram', url: 'https://t.me/Bk_kel' , icon: FaTelegram}
 ]
 
 const Footer = () => {
