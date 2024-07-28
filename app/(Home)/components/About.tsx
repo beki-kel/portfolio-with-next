@@ -24,7 +24,7 @@ return (
 
             <GlareCard value="https://coursera.org/verify/H4FMHWKRXWZP" className="flex flex-col  items-center justify-center">
                 <SiCoursera className='text-7xl '/>
-                <p className="text-white font-semibold text-xl text-center mt-4">
+                <p className="text-white font-semibold text-xl text-center mt-4 px-2">
                     Developing Back-End Apps with Node.js and Express
                 </p>
                 <p className=' text-center text-gray-500'> Coursera</p>
