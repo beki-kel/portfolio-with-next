@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
+import NavBar from '../components/NavBar'
+import Footer from "@/components/Footer";
 
 const space_Grotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Bereket Kelay",
   description: "Bereket Kelay",
 };
 
@@ -20,8 +22,9 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
         <link rel="manifest" href="../public/site.webmanifest"/>
       </Head>
       <body className={space_Grotesk.className}>
+        <NavBar/>
         {children}
-              
+        <Footer/>
         </body>
     </html>
   );
