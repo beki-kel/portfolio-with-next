@@ -106,7 +106,7 @@ const Skill = () => {
     ];
 
     return (
-        <div className=' pb-24 w-full bg-slate-950 text-white'>
+        <div className=' pb-12 w-full bg-slate-950 text-white'>
             <h1 className='w-full text-center pt-12 text-3xl font-semibold'>
                 <span className={DosisText.className}>Skills</span>
             </h1>
