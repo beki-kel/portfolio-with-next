@@ -114,7 +114,7 @@ const Skill = () => {
             <div className="py-12 rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
                 <InfiniteMovingCards
                     direction="left"
-                    speed="normal"
+                    speed="slow"
                 >
                     {skills.map((item, idx) => (
                         <div className="flex flex-col items-center" key={idx}>
