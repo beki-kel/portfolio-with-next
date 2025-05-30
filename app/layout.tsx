@@ -20,7 +20,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
         <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon-16x16.png"/>
         <link rel="manifest" href="../public/site.webmanifest"/>
       </Head>
-      <body className={space_Grotesk.className}>
+      <body className={space_Grotesk.className + " bg-slate-900"}>
         
         {children}
 
