@@ -69,6 +69,8 @@ const Page  = () => {
     const section = sectionMap[href];
     if (section) {
       setCurrentSection(section);
+      // Scroll to top when changing sections
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
@@ -90,7 +92,7 @@ const Page  = () => {
   };
 
   return (
-        <div className='min-h-screen flex flex-col relative bg-black'>
+        <div className='min-h-screen flex flex-col relative bg-black px-4'>
           {currentSection === 'hero' && <NavBar/>}
           
           <AnimatePresence mode="wait">

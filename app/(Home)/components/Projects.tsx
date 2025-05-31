@@ -181,7 +181,7 @@ const Projects = () => {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-black py-20 relative overflow-hidden">
+        <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-black py-20 relative overflow-hidden px-20">
             {/* Enhanced Background Effects */}
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-900/20 via-gray-950/40 to-black/80"></div>
             <div className="absolute top-20 left-1/4 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>

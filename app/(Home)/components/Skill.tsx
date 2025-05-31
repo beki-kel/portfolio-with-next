@@ -4,7 +4,7 @@ import React from 'react';
 import { DosisText } from '../../../components/DosisText';
 import { InfiniteMovingCards } from "../../../components/ui/infinite-moving-cards";
 import { DiCss3, DiHtml5, DiJava, DiJavascript, DiJavascript1, DiReact } from 'react-icons/di';
-import { SiDocker, SiExpress, SiFigma, SiFirebase, SiJavascript, SiMongodb, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiPython, SiReact, SiTailwindcss, SiTypescript } from 'react-icons/si';
+import { SiDocker, SiExpress, SiFigma, SiFirebase, SiJavascript, SiMongodb, SiNestjs, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiPython, SiReact, SiTailwindcss, SiTypescript } from 'react-icons/si';
 
 
 type Skill = {
@@ -102,7 +102,13 @@ const Skill = () => {
             src:SiFigma,
             name:"Figma",
             className: "text-white"
-        }
+        },
+        {
+            src: SiNestjs,
+            name: "Nest.js",
+            className: "text-pink-900"
+        },
+
     ];
 
     return (
@@ -114,17 +120,19 @@ const Skill = () => {
             <div className="py-12 rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
                 <InfiniteMovingCards
                     direction="left"
-                    speed="slow"
+                    speed="normal"
+                    pauseOnHover={true}
+                    className="w-full"
                 >
                     {skills.map((item, idx) => (
-                        <div className="flex flex-col items-center" key={idx}>
-                            <div className='text-9xl hover:scale-125 transition-all px-6'>
+                        <li className="flex flex-col items-center justify-center flex-shrink-0 w-48" key={idx}>
+                            <div className='text-8xl hover:scale-110 transition-all duration-300 px-4 py-2'>
                                 <span className={item.className}>
                                     <item.src/>
                                 </span>
                             </div>
-                            <p className='mt-5'>{item.name}</p>
-                        </div>
+                            <p className='mt-4 text-center text-sm font-medium'>{item.name}</p>
+                        </li>
                     ))}
                 </InfiniteMovingCards>
             </div>

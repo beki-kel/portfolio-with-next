@@ -3,7 +3,7 @@ import {Boxes} from '../../../components/ui/background-boxes'
 import { TextGenerateEffect } from "../../../components/ui/text-generate-effect";
 import { DosisText } from '../../../components/DosisText';
 import { HoverBorderGradient } from "../../../components/ui/hover-border-gradient";
-import {Avatar,AvatarFallback,AvatarImage,} from "@/components/ui/avatar";
+import Image from 'next/image'
 import Link from 'next/link'
 import { 
     Github, 
@@ -29,8 +29,8 @@ import {
 const Hero = () => {
     const words = 'I am a Fullstack developer passionate about modern web applications and machine learning';
     const stats = [
-        { number: '2+', label: 'Years Experience', icon: Calendar, color: 'blue' },
-        { number: '7+', label: 'Projects Completed', icon: Briefcase, color: 'green' },
+        { number: '2+ Years', label: 'Experience', icon: Calendar, color: 'blue' },
+        { number: '7+ ', label: ' Completed projects', icon: Briefcase, color: 'green' },
         { number: '100%', label: 'Client Satisfaction', icon: Heart, color: 'red' },
     ];
     
@@ -68,8 +68,8 @@ return (
             {/* Left Content Section */}
             <div className='w-full lg:w-5/12 bg-black/50 backdrop-blur-sm flex flex-col justify-center items-center px-8 sm:px-12 lg:px-24 py-16 lg:py-0'>
                 {/* Status Badge */}
-                <div className="mb-12 w-full flex justify-center lg:justify-start">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 text-green-400 rounded-full border border-green-500/30 text-sm font-medium animate-pulse">
+                <div className=" w-full flex justify-center lg:justify-start mt-24 mb-8">
+                    <div className="inline-flex items-center gap-2 px-4 py-2  bg-green-500/20 text-green-400 rounded-full border border-green-500/30 text-sm font-medium animate-pulse">
                         <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                         Available for work
                     </div>
@@ -77,10 +77,10 @@ return (
 
                 {/* Main Heading */}
                 <div className="text-center lg:text-left w-full">
-                    <div className="mb-8">
+                    <div className="mb-2">
                         <span className="text-blue-400 text-xl font-medium">Hello, I&apos;m</span>
                     </div>
-                    <h1 className='text-white text-center lg:text-left text-5xl sm:text-6xl lg:text-8xl font-bold mb-8 leading-tight'>
+                    <h1 className='text-white text-center lg:text-left text-5xl sm:text-6xl lg:text-5xl font-bold mb-2 leading-tight'>
                         <span className={`bg-gradient-to-r from-white via-blue-200 to-white bg-clip-text text-transparent ${DosisText.className}`}>
                             Bereket Kelay
                         </span>
@@ -88,7 +88,7 @@ return (
                     
                     {/* Role with highlight */}
                     <div className="mb-12">
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center lg:text-left">
+                        <h2 className="text-3xl sm:text-4xl lg:text-3xl font-semibold text-center lg:text-left">
                             <span className="text-gray-300">Full Stack </span>
                             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Developer</span>
                         </h2>
@@ -100,7 +100,7 @@ return (
                     </div>
                     
                     {/* Simplified Info */}
-                    <div className="flex flex-col gap-6 justify-center lg:justify-start mb-16">
+                    <div className="flex flex-col gap-6 justify-center lg:justify-start mb-8">
                         <div className="flex items-center gap-3 text-gray-300 text-lg justify-center ">
                             <MapPin className="w-5 h-5 text-blue-400" />
                             <span>Based in Ethiopia, working globally</span>
@@ -112,37 +112,30 @@ return (
                     </div>
                     
                     {/* Action Buttons */}
-                    <div className="flex flex-col sm:flex-row gap-6 justify-center  mb-16">
+                    <div className="flex flex-col sm:flex-row gap-6 justify-start  mb-16">
                         <HoverBorderGradient containerClassName="rounded-full" as="button">
-                            <Link href="mailto:breketkelay@gmail.com" className="flex items-center gap-2 text-lg px-8 py-4">
+                            <Link href="mailto:breketkelay@gmail.com" className="flex items-center gap-2 text-lg px-2 py-2 whitespace-nowrap">
                                 <Mail className="w-5 h-5" />
                                 Contact Me
                             </Link>
                         </HoverBorderGradient>
                         
-                        <HoverBorderGradient 
-                            containerClassName="rounded-full bg-transparent" 
-                            as="button"
-                            className="border-gray-600"
-                        >
-                            <Link href="#" className="flex items-center gap-2 text-white text-lg px-8 py-4" onClick={() => alert('Resume download will be available soon!')}>
-                                <Download className="w-5 h-5" />
-                                Download CV
-                            </Link>
+                        <HoverBorderGradient containerClassName="rounded-full bg-transparent" as="button" className="border-gray-600">
+                            <Link href="#" className="flex items-center gap-2 text-white text-lg px-2 py-2 whitespace-nowrap" onClick={() => alert('Resume download will be available soon!')}><Download className="w-5 h-5" />Download CV</Link>
                         </HoverBorderGradient>
                     </div>
                                         
                     {/* Stats Section */}
-                    <div className="grid grid-cols-3 gap-4 justify-center items-center w-full max-w-lg mx-auto lg:mx-0">
+                    <div className="grid grid-cols-3 gap-2 justify-center items-center w-full max-w-lg mx-auto lg:mx-0 mb-2">
                         {stats.map((stat, index) => {
                             const Icon = stat.icon;
                             return (
-                                <div key={index} className="bg-slate-900/50 backdrop-blur-sm rounded-xl p-4 border border-slate-700/50 text-center hover:border-blue-500/30 transition-all duration-300 group">
-                                    <Icon className="w-6 h-6 text-blue-400 mx-auto mb-2 group-hover:scale-110 transition-transform" />
-                                    <div className="text-2xl font-bold text-white mb-1">
+                                <div key={index} className="bg-slate-900/50 backdrop-blur-sm rounded-xl p-3 border border-slate-700/50 text-center hover:border-blue-500/30 transition-all duration-300 group">
+                                    <Icon className="w-5 h-5 text-blue-400 mx-auto mb-1 group-hover:scale-110 transition-transform" />
+                                    <div className="text-xl font-bold text-white mb-0.5">
                                         {stat.number}
                                     </div>
-                                    <div className="text-xs text-gray-400">
+                                    <div className="text-[0.6rem] text-gray-400 whitespace-nowrap overflow-hidden text-ellipsis px-1">
                                         {stat.label}
                                     </div>
                                 </div>
@@ -169,13 +162,16 @@ return (
                 {/* Central Avatar with Simple Styling */}
                 <div className="relative z-30 group">
                     <div className="absolute -inset-4 bg-gradient-to-r rounded-full from-blue-600 via-purple-600 to-green-600 blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-300" />
-                    <Avatar className='relative h-40 w-40 sm:h-64 sm:w-64 lg:h-80 lg:w-80 border-4 border-gradient-to-r from-blue-500 via-purple-500 to-green-500 shadow-2xl shadow-blue-500/20 group-hover:scale-105 transition-transform duration-300' >
-                        <AvatarImage 
+                    <div className='relative h-40 w-40 sm:h-64 sm:w-64 lg:h-80 lg:w-80 border-4 border-gradient-to-r from-blue-500 via-purple-500 to-green-500 shadow-2xl shadow-blue-500/20 group-hover:scale-105 transition-transform duration-300 rounded-full overflow-hidden' >
+                        <Image 
                             src="https://res.cloudinary.com/dr2h8zmll/image/upload/c_fill,ar_1:1,g_auto/v1722025229/MY_Image_dha270.jpg"
+                            alt="Bereket Kelay - Full Stack Developer"
+                            fill
                             className="object-cover group-hover:brightness-110 transition-all duration-300"
+                            priority
+                            sizes="(max-width: 640px) 160px, (max-width: 1024px) 256px, 320px"
                         />
-                        <AvatarFallback className='bg-transparent text-white text-2xl lg:text-4xl'>BK</AvatarFallback>
-                    </Avatar>
+                    </div>
                 </div>
 
                 {/* Simplified Floating Elements */}
@@ -210,7 +206,7 @@ return (
                     </div>
                     <div className="flex items-center gap-4 text-gray-300 text-lg">
                         <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-                        <span>Specializing in React, Node.js & Python</span>
+                        <span>Specializing in Typescript & Python</span>
                     </div>
                     <div className="flex items-center gap-4 text-gray-300 text-lg">
                         <div className="w-3 h-3 bg-purple-400 rounded-full"></div>

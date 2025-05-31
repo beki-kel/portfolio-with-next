@@ -82,5 +82,15 @@ export const courses: Course[] = [
         iconClassName: "text-purple-600",
         certificateUrl: "https://learn.deeplearning.ai/accomplishments/e927f726-fb77-4073-a65e-e9408dd54695?usp=sharing",
         description: "Advanced Retrieval-Augmented Generation techniques and evaluation methods"
+    },
+    {
+        id: "prompt-engineering",
+        title: "Prompt Engineering for Developers",
+        provider: "DeepLearning.AI",
+        icon: FaGraduationCap,
+        iconSize: 96,
+        iconClassName: "text-purple-600",
+        certificateUrl: "https://learn.deeplearning.ai/accomplishments/6214fdcf-6c1a-4742-aeaf-2ba2d4d28df9",
+        description: "Comprehensive guide to prompt engineering techniques for AI developers"
     }
 ];

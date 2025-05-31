@@ -105,7 +105,7 @@ const About = () => {
     ];
 
 return (
-    <div className='min-h-screen pb-24 w-full bg-slate-950 text-white -mt-40'>
+    <div className='min-h-screen pb-24 w-full bg-slate-950 text-white -mt-40 px-2'>
         {/* About/Education Section */}
         <LampContainer >
             <h1 className='w-full text-center text-3xl  font-semibold -mt-40'> <span className={DosisText.className}>Education And Certificate</span> </h1>
